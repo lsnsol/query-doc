@@ -1,0 +1,1 @@
+./indexify server -d
