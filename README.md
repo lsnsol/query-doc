@@ -16,7 +16,25 @@
 11. Torch Vision (torchvision)
 12. Easy OCR (easyocr)
 13. Py PDF (pypdf)
-14. Langchain OpenAI (langchain_openai)
+14. Utils (utils)
+15. Langchain OpenAI (langchain_openai) or Langchain Google VertexAI (langchain-google-vertexai)
+
+### Note: Google Vertex AI will require following setup as well
+1. gcloud SDK - download and install
+2. run ```gcloud init``` - initialize the gcloud
+3. select project with VertexAI API enabled - can be done via ```gcloud config set project **name of project**```
+4. run ```gcloud auth application-default login``` - this will enable all libraries being called to use the auth of the accouint used in gcloud init
+
+
+### Steps to Run and Stop:
+1. ```curl https://www.tensorlake.ai | sh```
+2. ```sh init.sh```
+
+If killing init.sh terminal and running again use ```run.sh```
+
+To completely stop all services use ```sh stop.sh```
+It should show the message - "No Sockets found in /run/screen/S-**username**"
+
 
 ### Reference
 

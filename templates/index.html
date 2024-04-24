@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Query Doc</title>
+  </head>
+  <body>
+    <div style="margin-bottom: 50px">
+      Upload Section
+      <form action="/uploadpdf" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Upload" />
+      </form>
+    </div>
+
+    <div>
+      Query Section
+      <form action="/querypdf" method="post">
+        <input type="text" name="query" />
+        <input type="submit" value="Query" />
+      </form>
+    </div>
+  </body>
+</html>
